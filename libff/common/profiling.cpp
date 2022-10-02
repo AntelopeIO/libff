@@ -330,7 +330,7 @@ void leave_block(const std::string &msg, const bool indent)
     }
 }
 
-void print_mem(const std::string &s)
+void print_mem([[maybe_unused]] const std::string &s)
 {
 #ifndef NO_PROCPS
     struct proc_t usage;
